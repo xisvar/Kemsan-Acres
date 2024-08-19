@@ -8,8 +8,8 @@ const toggleMenu = () => {
 const carousel = document.querySelector('.carousel');
 const images = [
     '/assets/kemsan.JPG',
-    '/assets/kemsan.JPG',
-    '/assets/kemsan.JPG',
+    '/residence-2219972.jpg',
+    '/assets/bg3.jpg',
 ];
 
 let currentIndex = 0;
