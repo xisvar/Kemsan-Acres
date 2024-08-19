@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Pen+Script&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&family=Roboto:wght@400;700&display=swap');
+
+ 
+@font-face {
+    font-family: 'Canela Web';
+    src: url('https://www.harvard.edu/wp-content/themes/core/assets/fonts/theme/canela/Canela-Regular-Web.woff2') format('woff2');
+ 
+  }
+  
+@font-face {
+    font-family: 'GT America';
+    src:  url('https://www.harvard.edu/wp-content/themes/core/assets/fonts/theme/gt-america/GT-America-Standard-Regular.woff2') format('woff2');
+ 
+  }
+
+@font-face {
+    font-family: "Google Sans";
+    src: url("https://fonts.gstatic.com/s/googlesans/v58/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vgCIhM907w.woff2") format("woff2");
+  }
+  
+body{
+    margin:0 !important;
+    /* background: #fff; */
+    /*fbf7f0*/
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 55%;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.slide-up{
+  animation-name: slideFadeUp;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+.slide-up1{
+  animation-name: slideFadeUp;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slideFadeUp {
+  0% {
+    transform: translateY(1px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
+.slide-down {
+  animation-name: slideFadeDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideFadeDown {
+  0% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+}
+
+.nav-in {
+    animation: slideIn 0.5s forwards;
+  }
+  
+  .nav-out {
+    animation: slideOut 0.5s forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+/* Nav.css */
+
+
+.nav-in {
+    animation: slideIn 0.5s forwards;
+  }
+  
+  .nav-out {
+    animation: slideOut 0.5s forwards;
+  }
+
+.app{
+    min-height: 85vh;
+    overflow: hidden;
+
+    .carousel{
+        /* background-image: url(residence-2219972.jpg); */
+        background-size: cover;
+        background-position: top;
+        transition:.5s ease;
+    }
+}
+
+.rel{
+    position: relative;
+}
+
+.abs{
+    position: absolute;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    background: #fff;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    .right-stuff{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .menu-btn{
+            margin-left: 9px;
+            display: none;
+        }
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            object-position:center;
+            border-radius: 10px;
+            border-radius: 4%;
+        }
+        .name{
+         display: flex;
+         flex-direction: column;
+         label{
+            font-size: 16px;
+            font-weight: 600;
+            margin-left: 10px;
+            font-family: "GT America";
+         }
+         span{
+            font-size: 12px;
+            font-weight: 400;
+            margin-left: 10px;
+            font-family: "GT America";
+            color: #8E8E8E;
+         }
+        }
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            padding: 0px 10px;text-decoration: none;
+            font-size: 16px;
+            font-family: "GT America";
+            font-weight: 600;
+            color: #51515156;
+            cursor: pointer;
+            &.active{
+                color: #000;
+            }
+            label{
+                cursor: pointer;
+            }
+        }
+    }
+    .empty{
+        display: flex;
+        border-width: 1px 1px 3px 1px;
+        border-style: solid;
+        border-color: #51515156;
+        padding: 5px 10px;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .green{
+            background-color: #38b6ec;
+ 
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        margin-right: 6px;
+        
+        }
+        .label{
+            font-size: 13px;
+            font-family: "GT America";
+            font-weight: 600;
+            color: #767676;
+  
+            cursor: pointer;
+          
+        }
+    }
+}
+
+.none{
+    display: none;
+}
+
+
+
+/* landing.css */
+.bg{
+    background-image: linear-gradient(to right bottom, #000000, #1e1e1e, #03074ea3, #2e44b24b, #1250eb5d);
+}
+
+.flex{
+    display: flex;
+    .icon, i, .button{
+        z-index: 99;
+        transform: translateY(90%);
+    }
+
+    
+    .prev, .next{
+        border-radius: 999999px;
+        cursor: pointer;
+        margin: 0 25px;
+        transition: 0.3s;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        position: absolute;  
+        bottom: 50%;   
+    }
+
+    .prev{
+        left: 0;
+    }
+
+    .next{
+        right: 0;
+    }
+    
+     button:hover{
+        color: #fff;
+    }
+
+    .blur{
+        border-radius: 99999px;
+        width: 150px;
+        height: 150px;
+        filter: blur(25px);
+        background-color: #3875ec;
+        transform: translateY(90%);
+        color: #fff;
+        z-index: -1;
+    }
+}
+
+
+.body{
+    padding: 80px;
+    min-height: 90vh;
+    .hero{
+        .first{
+            font-family: "Google Sans";
+            font-size: 65px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .second{
+            font-family: "GT America";
+            font-size: 17px;
+            width: 70%;
+            color: #ffffff;
+            line-height: 1.4;
+
+            button{
+                background-color: rgb(59 130 246);
+                padding: 20px;
+                color: white;
+                font-weight: 500;
+                min-width: 140px;
+                border: 1px solid white; 
+                font-size: 16px; 
+                transition: .7s ease;            
+            }
+
+            button:hover{
+                background-color: transparent;
+                transition: .7s ease;
+                color: #0091ff;
+                border: 1px solid rgb(59 130 246);
+            }
+
+            .clear{
+                margin-left: 10px;
+                background-color: transparent;
+                font-weight: 600;
+                border: 2px solid white; 
+                transition: .7s ease;
+            }
+
+            .clear:hover{
+                background-color:  rgb(255, 255, 255);
+                color: #000;
+                transition: .7s ease;
+            }
+     
+            &.btmm{
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .flex{
+        display: flex;
+    }
+}
+
+#purpose, #features{
+    gap: 20%;
+    color: #000;
+    .hero{
+        .first{
+            font-family: "Google Sans";
+            font-size: 45px;
+            color: #000;
+        }
+    }
+    .second{
+        font-family: "GT America";
+        font-size: 14px;
+        width: 70%;
+        color: #000000;
+        line-height: 1.4;
+        
+    }
+    .blue{
+        color: rgb(59 130 246);
+    }
+
+
+    .rec{
+        background-color: #87afff;
+        height: 100%;
+        border-radius: 5px;
+        img{
+            max-width: 355px;
+            min-height: 535px;
+            object-fit: cover;
+            transform: translate(50px, 50px);
+            filter: drop-shadow(50px);
+            border-radius: 5px;
+            box-shadow: #0000003b;
+        }
+    }
+}
+
+#features{
+    gap: 0;
+    max-height: 55vh;
+    .flex{
+        gap:0%;
+    }   
+    
+    .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero{
+        max-width: 100%;
+        .first{
+            font-family: "Google Sans";
+            font-size: 65px;
+            font-weight: 900;
+            color: #000;
+        }
+    }
+}
+
+.center{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-size: 65px;
+    font-family: "Google Sans";
+    font-weight: 900;
+    color: #fff;
+    background-color: rgb(29 78 216);
+    .flex{
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+
+    .pro, .blue{
+        padding: 20px 40px;
+        border-radius: 5px;
+        border: .1px solid white;
+        background-color: rgb(107 33 168);
+        font-size: 11px;
+        font-weight: 400;
+        max-width: 345px;
+        text-align: left;
+        h4{
+            font-size: 24px;
+            font-weight: 800;
+            text-align: left;
+        }
+        img{
+            width: 100%;
+            min-width: 265px;
+            max-height: 90px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: .1px solid white;
+        }
+
+        button{
+            margin: 5px 0;
+            color: rgb(107 33 168);
+            background-color: white;
+            transition: .7s ease;
+            padding: 11px 15px;
+            border: none;
+            font-size: 14px;
+            border-radius: 5px;
+            font-weight: 600;
+            width: fit-content;
+        }
+
+        button:hover{
+            color: white;
+            background-color: rgb(75, 14, 126);
+        }
+
+    }
+    
+    .blue{
+        background-color: rgb(59 130 246);
+
+        button{
+            color: rgb(59 130 246);
+        }
+
+        button:hover{
+            color: white;
+            background-color: rgb(16, 72, 161);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app{
+        min-height: 65vh;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+        .blur{
+            display: none;
+        }
+    }
+
+    .body{
+        padding: 40px 20px;
+        min-height: 65vh;
+        .flex{
+            flex-wrap: wrap;
+
+            .prev, .next{ 
+                bottom: 15%;   
+            }
+        }
+        .hero{
+            .first{
+                font-size: 30px;
+            }
+            .second{
+                font-size: 14px;
+                width: 100%;
+                line-height: 1.5;
+                span.hg{
+                    font-weight: 500;
+                    span{
+                        font-size: 12px;
+                    }
+                }
+
+                
+                button, .clear{
+                    padding: 15px 21px;
+                    min-width: 90px;
+                    border: .7px solid white; 
+                    font-size: 11px; 
+                }
+
+            }
+        }
+    }
+
+    #purpose, #features{
+        flex-wrap: wrap;
+
+        .first{
+            font-size: 25px;
+        }
+
+        .second{
+            width: 100%;
+        }
+
+        .rec{
+            background-color: #93b7ff8f;
+            width: max-content;
+            img{
+                transform: translate(15px, 15px);
+            }
+        }
+    }
+
+    .center{
+        font-size: 25px;
+
+        .pro{
+            max-width: 100%;
+            margin-top: 21px;
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+    .menubox{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 999;
+        height: 100%;
+        left: 0;
+        padding: 40px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .cancel-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            padding-bottom: 30px;
+            .cancel-icon{
+                font-size: 26px;
+                color: #555;
+                cursor: pointer;
+                transition: 0.4s;
+                &:hover{
+                    transition: 0.4s;
+                    color: #555;
+                }
+            }
+        }
+
+        .nav-links{
+            width:90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .nav-link{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: #000;
+                margin-bottom: 20px;
+                cursor: pointer;
+                a{
+                    color:#51515156;
+                    font-family: "GT America";
+                    cursor: pointer;
+                    label{
+                        cursor: pointer;
+                    }
+                    &:hover{
+                        color: #515151a5;
+                    }
+                }
+                &.active{
+                    a{
+                        cursor: pointer;
+                        color: #000;
+                        padding-bottom: 5px;
+                    }
+              
+                }
+            }
+        }
+    }
+nav{
+    padding: 20px 20px;
+    .logo{
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        .name{
+            label{
+                font-size: 14px;
+            }
+            span{
+                font-size: 10px;
+            }
+        }
+    }
+    .links{
+        display: none;
+    }
+    .empty{
+        .green{
+            height: 6px;
+            width: 6px;
+        }
+        .label{
+            font-size: 9px;
+            font-weight: 400;
+        }
+    }
+}
+
+}
+
+
+
+button {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .navbar,
+  .navbar-burger,
+  .menu{
+    position: fixed;
+  }
+
+  
+  body.open .background {
+    filter: blur(20px);
+  }
+  
+  .navbar {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 72px;
+    padding-left: 20px;
+    padding-right: 72px;
+    background: #19191c;
+    color: #f9f9f9;
+  }
+  
+  .navbar > button {
+    font-size: 28px;
+  }
+  
+  .navbar-burger {
+    position: relative;
+    z-index: 3;
+    top: 5%;
+    right: 0;
+    display: grid;
+    place-items: center;
+    width: 26px;
+    height: 62px;
+    background-image: url("./assets/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  body.open .navbar-burger {
+    background-image: url("./assets/close.svg~");
+  }
+ 
+  .menu {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  
+  body.open .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .menu > a {
+    color: #f9f9f9;
+    font-size: 32px;
+    font-weight: 55;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+  }
+  
+  body.open .menu > a {
+    animation: appear 0.3s both;
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      translate: 0 50px;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+  .none{
+    display: none;
+  }
+
+
+
+  @media screen and (max-width: 725px){
+    .none{
+        display: flex;
+    }
+  }
