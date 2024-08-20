@@ -408,7 +408,7 @@ nav{
 
 #features{
     gap: 0;
-    max-height: 55vh;
+    min-height: 75vh;
     .flex{
         gap:0%;
     }   
