@@ -448,6 +448,7 @@ nav{
 
 
     .pro, .blue{
+        margin-top: 20px;
         padding: 20px 40px;
         border-radius: 5px;
         border: .1px solid white;
