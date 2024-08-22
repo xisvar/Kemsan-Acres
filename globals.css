@@ -408,7 +408,7 @@ nav{
 
 #features{
     gap: 0;
-    min-height: 75vh;
+    min-height: 65vh;
     .flex{
         gap:0%;
     }   
@@ -431,20 +431,25 @@ nav{
     }
 }
 
+.bgblu{
+    background-color: rgb(29 78 216);
+    color: #fff;
+}
+
 .center{
     justify-content: center;
     text-align: center;
     font-size: 65px;
     font-family: "Google Sans";
     font-weight: 900;
-    color: #fff;
-    background-color: rgb(29 78 216);
     .flex{
         justify-content: center;
         gap: 20px;
     }
 
-
+    span{
+        color: rgb(29, 78, 216);
+    }
 
     .pro, .blue{
         margin-top: 20px;
@@ -520,6 +525,7 @@ nav{
 
 }
 
+
 .features{
     display: flex;
 }
@@ -547,6 +553,7 @@ nav{
 .page{
     overflow-x: auto;
     min-height: 50vh;
+    padding-bottom: 60px;
 }
 
 .page::-webkit-scrollbar{
