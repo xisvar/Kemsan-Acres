@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'GT America';
+    src:  url('https://www.harvard.edu/wp-content/themes/core/assets/fonts/theme/gt-america/GT-America-Standard-Regular.woff2') format('woff2');
+ 
+}
+
+.frame{
+    padding: 40px 50px;
+}
+
+.bb{
+    border-bottom: .5px solid black;
+}
+
+.wbb{
+    border-bottom: .5px solid white;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.blue{
+    color: rgb(29, 78, 216);
+    font-family: 'Google sans';
+}
+
+.mt2{
+    margin-top: 15px;
+}
+
+.white{
+    color: #F5F5F3;
+}
+
+.footer .flex{
+    justify-content: space-evenly;
+}
+
+.footer ul{
+    min-width: 171px;
+    list-style: none;
+}
+
+.footer ul li a{
+    font-size: large;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'GT America';
+}
+
+.ref{
+    color: rgb(29, 78, 216);
+    font-size: 16px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+
+
+@media  (max-width: 999px) {
+    p{
+        font-size: 18px;
+    }
+
+}
+
+@media  (max-width: 767px) {
+    .frame{
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 645px) {
+    .none{
+        display: flex;
+    }
+
+    .footer .flex{
+        flex-direction: column;
+    }
+    
+}
+
+
+
+.custom-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .custom-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+        border-radius: 9999px;
+    }
+}
+
+.custom-inner-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .custom-inner-container {
+        justify-content: flex-start;
+    }
+}
+
+.custom-link {
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 0.75rem;
+    font-size: 1.125rem;
+}
+
+.custom-link:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    color: rgb(115 115 115);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    color: rgb(37 99 235);
+}
+
+.custom-nav {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 3rem 0;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .custom-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+
+.custom-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .custom-nav-list {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+.custom-nav-item {
+    color: white;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+.custom-nav-item:hover {
+    color: rgb(59 130 246);
+}
+
+.custom-apply-button {
+    padding: 0.375rem 1rem;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 0.75rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.custom-apply-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.size-6 {
+    width: 24px;
+    height: 24px;
+}
+
+.menu-open {
+    display: block;
+}
+
+.menu-closed {
+    display: none;
+}
+
+.custom-nav.flex {
+    display: flex;
+}
