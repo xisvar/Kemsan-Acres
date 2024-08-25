@@ -44,6 +44,12 @@
     list-style: none;
 }
 
+.aly{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
 .footer ul li a{
     font-size: large;
     color: black;
