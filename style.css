@@ -47,6 +47,7 @@
 .aly{
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
     gap: 20px;
 }
 
