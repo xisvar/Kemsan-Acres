@@ -1,3 +1,4 @@
+
 const toggleMenu = () => {
     document.body.classList.toggle("open");
 };
@@ -30,3 +31,36 @@ document.querySelector('.prev').addEventListener('click', () => {
 
 // Initial background setup
 updateBackground(currentIndex);
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const paginationContent = document.querySelector('.pagination-content');
+    const pages = document.querySelectorAll('.page');
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+    let currentPage = 0;
+
+    function updatePagination() {
+        paginationContent.style.transform = `translateX(-${currentPage * 100}%)`;
+        prevButton.disabled = currentPage === 0;
+        nextButton.disabled = currentPage === pages.length - 2;
+    }
+
+    prevButton.addEventListener('click', () => {
+        if (currentPage > 0) {
+            currentPage--;
+            updatePagination();
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (currentPage < pages.length - 1) {
+            currentPage++;
+            updatePagination();
+        }
+    });
+
+    updatePagination();
+});
