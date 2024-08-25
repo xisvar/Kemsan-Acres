@@ -519,6 +519,11 @@ nav{
         font-size: 34px;
     }
 
+    .aly{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
     .ally{
         aspect-ratio: 16/4;
         object-fit: contain;
@@ -767,6 +772,19 @@ nav{
 
         p{
             font-size: 12px;
+        }
+    }
+
+    .half{    
+        .flex{
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ally{
+            aspect-ratio: 16/4;
+            object-fit: contain;
+            max-width: 325px;
         }
     }
 
