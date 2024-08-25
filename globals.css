@@ -44,6 +44,7 @@ body{
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: "Google Sans";
 }
 
 
