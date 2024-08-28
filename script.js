@@ -1,22 +1,19 @@
-
 const toggleMenu = () => {
     document.body.classList.toggle("open");
 };
-
-
 
 const carousel = document.querySelector('.carousel');
 const images = [
     '/assets/kemsan.JPG',
     '/residence-2219972.jpg',
-    '/assets/bg3.jpg',
+    '/assets/wide.jpg',
 ];
 
 let currentIndex = 0;
 
 function updateBackground(index) {
     carousel.style.backgroundImage = `url(${images[index]})`;
-    carousel.style.backgroundPosition = `bottom`   
+    carousel.style.backgroundPosition = 'bottom';  
 }
 
 document.querySelector('.next').addEventListener('click', () => {
@@ -29,9 +26,14 @@ document.querySelector('.prev').addEventListener('click', () => {
     updateBackground(currentIndex);
 });
 
+// Automatically change background every 30 seconds
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateBackground(currentIndex);
+}, 7500); // 30000 milliseconds = 30 seconds
+
 // Initial background setup
 updateBackground(currentIndex);
-
 
 
 

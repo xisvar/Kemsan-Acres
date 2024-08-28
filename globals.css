@@ -258,9 +258,9 @@ nav{
 
 .flex{
     display: flex;
-    .icon, i, .button{
+    .icon, .button{
         z-index: 99;
-        transform: translateY(90%);
+        transform: translate(50px, 50px);
     }
 
     
@@ -718,7 +718,7 @@ nav{
         }
         .hero{
             .first{
-                font-size: 30px;
+                font-size: 40px;
             }
             .second{
                 font-size: 14px;
