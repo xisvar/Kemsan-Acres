@@ -8,12 +8,6 @@
     src: url('https://www.harvard.edu/wp-content/themes/core/assets/fonts/theme/canela/Canela-Regular-Web.woff2') format('woff2');
  
   }
-  
-@font-face {
-    font-family: 'GT America';
-    src:  url('https://www.harvard.edu/wp-content/themes/core/assets/fonts/theme/gt-america/GT-America-Standard-Regular.woff2') format('woff2');
- 
-  }
 
 @font-face {
     font-family: "Google Sans";
@@ -45,6 +39,7 @@ body{
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Google Sans";
+    transition: .4s ease;
 }
 
 
@@ -578,10 +573,13 @@ nav{
                         gap: 20px;
 
                         .imgdiv img {
-                            width: 100%;
-                            height: 90px;
-                            min-height: 40px;
-                            border-radius: 99999px;
+                            min-height: fit-content;
+                            width: 100%;  
+                            min-width: 100px;
+                            max-height: 100px;  
+                            aspect-ratio: 1/1;
+                            object-fit: cover;              
+                            border-radius: 100%;
                         }
 
                         .view.des {
@@ -603,20 +601,24 @@ nav{
     button {
         padding: 10px 20px;
         margin: 0 10px;
-        border: none;
+        border: .1px solid #007bff;
         border-radius: 100%;
         background: #007bff;
         color: white;
         cursor: pointer;
         font-size: 16px;
+        height: 50px;
+        width: 50px;
     }
     
     button:hover {
-        background: #0056b3;
+        background: white;
+        color: #007bff;
     }
     
     button:disabled {
-        background: #ccc;
+        background: #f9f9f9;
+        color: #007bff;
         cursor: not-allowed;
     }
 
