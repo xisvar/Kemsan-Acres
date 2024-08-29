@@ -261,6 +261,7 @@ nav{
     .icon, .button{
         z-index: 99;
         transform: translate(50px, 50px);
+        cursor: pointer;
     }
 
     
@@ -313,7 +314,6 @@ nav{
             margin-bottom: 20px;
         }
         .second{
-            font-family: "GT America";
             font-size: 17px;
             width: 70%;
             color: #ffffff;
@@ -373,12 +373,11 @@ nav{
         }
     }
     .second{
-        font-family: "GT America";
         font-size: 14px;
         width: 70%;
         color: #000000;
         line-height: 1.4;
-        
+        text-align: left;
     }
     .blue{
         color: rgb(59 130 246);
@@ -701,6 +700,12 @@ nav{
     .flex{
         display: flex;
         flex-direction: column;
+
+        .icon, .button{
+            z-index: 99;
+            transform: translate(350px, 30px);
+        }
+    
         .blur{
             display: none;
         }

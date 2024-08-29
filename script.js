@@ -35,8 +35,6 @@ setInterval(() => {
 // Initial background setup
 updateBackground(currentIndex);
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const paginationContent = document.querySelector('.pagination-content');
     const pages = document.querySelectorAll('.page');
@@ -70,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'vertical',
     loop: true,
   
     // If we need pagination
@@ -89,3 +86,54 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+
+
+
+
+
+
+
+
+
+
+function openVideo() {
+    const videoPopup = document.querySelector('.video-popup');
+    const videoFrame = document.getElementById('video-frame');
+    
+    // Set the YouTube video URL
+    videoFrame.src = "https://www.youtube.com/embed/yfF5Pc4NxIA?si=lTzoi14g4t5AKxBV?autoplay=1";  // Replace VIDEO_ID with Mr. Beast video ID
+    
+    // Show the popup
+    videoPopup.style.display = "flex";
+}
+
+function closeVideo() {
+    const videoPopup = document.querySelector('.video-popup');
+    const videoFrame = document.getElementById('video-frame');
+    
+    // Stop the video
+    videoFrame.src = "";
+    
+    // Hide the popup
+    videoPopup.style.display = "none";
+}
+
+// Attach the close function to the close button
+document.querySelector('.close').addEventListener('click', closeVideo);
+
+// Close the popup if the user clicks outside the video content
+document.querySelector('.video-popup').addEventListener('click', function(e) {
+    const videoContent = document.querySelector('.video-popup-content');
+    if (!videoContent.contains(e.target)) {
+        closeVideo();
+    }
+});
+
+// Close the popup if the user presses the Esc key
+document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape") {
+        closeVideo();
+    }
+});
+

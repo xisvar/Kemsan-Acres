@@ -27,7 +27,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonyjanon.jpgmus" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -108,8 +107,16 @@
                         <div class="rel">
                             <div class="blur">
                             </div>
-                            <img class="icon" src="assets/play-32.png" alt="">
+                            <img class="icon" src="assets/play-32.png" alt="Play" onclick="openVideo()">    
                         </div>
+
+                        <div class="video-popup">
+                            <div class="video-popup-content">
+                                <span class="close">&times;</span>
+                                <iframe id="video-frame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -451,27 +458,9 @@
                 </div>
             </section>
 
-
-            <!-- Slider main container -->
-            <!-- <div class="swiper">
-
-                <div class="swiper-wrapper flex">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                ...
-                </div>
-                <div class="swiper-pagination"></div>
-            
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            
-                <div class="swiper-scrollbar"></div>
-            </div> -->
         </div>
         <script>
             AOS.init();
-          </script>a
+        </script>
     </body>
 </html>
