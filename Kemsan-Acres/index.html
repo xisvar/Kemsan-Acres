@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charSet="utf-8"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <meta name="viewport" content="width=device-width, initial-scale=0.85"/>
+        <link rel="preload" as="image" href="logo.png"/>
+
+        <link rel="stylesheet" href="globals.css" crossorigin="" data-precedence="next"/>
+        <link rel="stylesheet" href="style.css">
+        <meta name="google-site-verification" content=""/>
+        <meta property="og:title" content="Kemsan Acres Global Limited"/>
+        <meta property="og:type" content="website"/>
+        <link rel="icon" href="logo1.png" sizes="40x40"/>
+        <meta property="og:url" content="https://kemsangloballtd.com/"/>
+        <link rel="preload" href="logo.png" as="image">
+        <meta property="og:site_name" content="Kemsan Global"/>
+        <meta name="robots" content="index, follow"/>
+        <meta name="robots" content="all"/>
+        <meta name="description" content="#1 Real Estate Company in Nigeria."/>
+        <meta property="og:description" content="#1 Real Estate Company in Nigeria"/>
+        <title>Home - Kemsan Acres </title>
+        <meta name="next-size-adjust"/>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/tasa-orbiter-display" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonyjanon.jpgmus" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script defer src="script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+
+    <body>
+        <div class="app">
+            <div class="carousel">
+                <nav class="">
+                    <div class="logo">
+                        <img src="/logo1.png" alt=""/>
+                        <div class="name">
+                            <label for="">Kemsan Acres</label>
+                            <span>Global Limited</span>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a class="active" href="index.html">
+                            <label for="">Home</label>
+                        </a>
+                        <a class="" href="about/about.html">
+                            <label for="">About</label>
+                        </a>
+                        <a class="" href="land/land.html">
+                            <label for="">Properties</label>
+                        </a>
+                        <a class="" href="/blog/blog.html">
+                            <label for="">Blog</label>
+                        </a>
+                    </div>
+    
+                    <div class="right-stuff">
+                        <div class="empty" onclick="toggleMenu()">
+                            <div class="green"></div>
+                            <div class="label">
+                                Login
+                            </div>
+                        </div>
+                    </div>
+    
+                    <button class="navbar-burger none" onclick="toggleMenu()">
+                    </button>
+                    <nav class="menu none">
+                      <a href="index.html" style="animation-delay: 0.1s">Home</a>
+                      <a href="/about/about.html" style="animation-delay: 0.2s">About</a>
+                      <a href="/lands/lands.html" style="animation-delay: 0.3s">Properties</a>
+                      <a href="/blog/blog.html" style="animation-delay: 0.4s">Blog</a>
+                    </nav>
+                </nav>
+    
+    
+                <div class="body slide-up bg">
+                    <div class="flex">
+                        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+
+                        <div class="hero">
+                            <div class="first nav-in">
+                                Modernizing <br>
+                                property acquisition <br>
+                                with ease
+                            </div>
+                            <div class="second btmm"   data-aos="fade-down">
+                                We are a highly-reputable real estate company in Nigeria dedicated to helping as many people become landed property owners.
+                            </div>
+                            <div class="second">
+                                #1 Real-estate service in Nigeria.
+                            </div>
+                            <br>
+                            <br>
+                            <div class="second btmm"  data-aos="fade-left">
+                                <button>Register</button>
+                                <button class="clear">Clear</button>
+                            </div>
+                        </div>
+
+                        <div class="rel">
+                            <div class="blur">
+                            </div>
+                            <img class="icon" src="assets/play-32.png" alt="Play" onclick="openVideo()">    
+                        </div>
+
+                        <div class="video-popup">
+                            <div class="video-popup-content">
+                                <span class="close">&times;</span>
+                                <iframe id="video-frame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="body flex" id="purpose">
+                <div class="rec" data-aos="zoom-in">
+                    <img src="assets/1723998165753.jpg" alt="">    
+                </div>
+                <div>
+                    <div class="hero">
+                        <div class="second btmm blue">
+                            <br><br><br><br>
+                            What we do
+                        </div> 
+                        <div class="first"  data-aos="fade-down">
+                            Secure your property needs,<br>
+                            with us <span class="blue">quality</span> <br>
+                            is assured
+                        </div>
+    
+                        <div class="second">
+                            At Kemsan Acres Global Limited, we make land ownership and real estate development accessible and straightforward. We procure premium lands, develop residential and commercial properties, and offer bespoke architectural designs tailored to your needs. Our expert consultancy services guide you through property acquisition and investment, while our 24/7 customer support ensures a seamless experience from start to finish.
+                        </div>
+                        <br>
+                        <br>
+                        <div class="second btmm">
+                            <button>Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="body bgblu center">
+                Let's make it easy to get a property for <br>you!
+
+            </div>
+    
+            <div class="body" id="features">
+                <div class="flex">
+                    <div>
+                        <div class="hero">
+                            <div class="second btmm blue">
+                                What we do
+                            </div> 
+                            <div class="first"  data-aos="fade-down">
+                                Be part of the <br>innovative<span class="blue"> standard</span>
+                            </div>
+        
+                            <div class="second">
+                                Discover our handpicked selection of premium properties that showcase the best in modern living and investment opportunities. Each property reflects our commitment to excellence, blending innovative design with prime locations. Whether you're looking for a new home or a valuable investment, our featured properties set the standard in quality and style.
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="hero col">
+                        <div class="second btmm">
+                            <button>Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                            
+            <div class="page">
+                <div class="features">
+                    <div class="feature">
+                        <div class="imgdiv">
+                            <img src="assets/lagos.webp" alt="">
+                        </div>
+                        <div class="pd">
+                            <h2 class="view des">Lagos</h2>
+                        </div>
+                    </div>
+    
+                    <div class="feature">
+                        <div class="imgdiv">
+                            <img src="assets/abuja.webp" alt="">
+                        </div>
+                        <div class="pd">
+                            <h2 class="view des">Abuja</h2>
+                        </div>
+                    </div>
+    
+                    <div class="feature">
+                        <div class="imgdiv">
+                            <img src="assets/ibadan.webp" alt="">
+                        </div>
+                        <div class="pd">
+                            <h2 class="view des">Ibadan</h2>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="imgdiv">
+                            <img src="assets/ogun.webp" alt="">
+                        </div>
+                        <div class="pd">
+                            <h2 class="view des">Ogun</h2>
+                        </div>
+                    </div>
+    
+                    <div class="feature">
+                        <div class="imgdiv">
+                            <img src="assets/ph.webp" alt="">
+                        </div>
+                        <div class="pd">
+                            <h2 class="view des">Port Harcourt</h2>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="imgdiv">
+                            <img src="assets/DSC_0409.JPG" alt="">
+                        </div>
+                        <div class="pd">
+                            <h2 class="view des">here</h2>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="imgdiv">
+                            <img src="assets/warm.jpg" alt="">
+                        </div>
+                        <div class="pd">
+                            <h2 class="view des">Lagos</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="body testimonials bgblu center">
+                <h4 data-aos="fade-down">Testimonials</h4>
+                <div data-aos="fade-down">
+                    Trust Us With Your Property 
+                </div>
+
+                <p data-aos="fade-up">We are a highly-reputable real estate company in Nigeria dedicated to helping <br> as many people become landed property owners.</p>
+
+                <div class="flex">
+                    <div class="testimony flex">
+                        <div class="person">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="des"></div>
+                    </div>
+                </div>
+
+                <div class="pagination-container">
+                    <div class="pagination-content">
+                        <div class="page">
+                            <div class="features">
+                                <div class="feature">
+                                    <div class="imgdiv">
+                                        <img src="assets/anon.jpg" alt="">
+                                    </div>
+                                    <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        <p>Get involved in limitless research projects and collaborations. Prioritize what matters most to your community.</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <div class="imgdiv">
+                                        <img src="assets/anon.jpg" alt="">
+                                    </div>
+                                    <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        <p>Get involved in limitless research projects and collaborations. Prioritize what matters most to your community.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page">
+                            <div class="features">
+                                <div class="feature">
+                                    <div class="imgdiv">
+                                        <img src="assets/anon.jpg" alt="">
+                                    </div>
+                                    <div>
+                                            <i class="fas fa-star"></i>z
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        <p>Get involved in limitless research projects and collaborations. Prioritize what matters most to your community.</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <div class="imgdiv">
+                                        <img src="assets/anon.jpg" alt="">
+                                    </div>
+                                    <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        <p>Get involved in limitless research projects and collaborations. Prioritize what matters most to your community.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page">
+                            <div class="features">
+                                <div class="feature">
+                                    <div class="imgdiv">
+                                        <img src="assets/anon.jpg" alt="">
+                                    </div>
+                                    <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        <p>Get involved in limitless research projects and collaborations. Prioritize what matters most to your community.</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <div class="imgdiv">
+                                        <img src="assets/anon.jpg" alt="">
+                                    </div>
+                                    <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        <p>Get involved in limitless research projects and collaborations. Prioritize what matters most to your community.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination-buttons">
+                    <button id="prevButton"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="nextButton"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="body half media">
+                <h3 class="center">Kemsan in the media</h3>
+                <div class="page">
+                    <div class="features">
+                        <div class="feature">
+                            <div class="imgdiv">
+                                <img src="assets/media1.jpg" alt="">
+                            </div>
+                            <div class="pd">
+                                <h2 class="view des">Lagos</h2>
+                                <p>Brookline Estate (600 SQM), For sale, ₦ 6,600,000.00 Dry Land | Gatehouse | Registered Survey | 600sqft Ketu, Epe, Lagos</p>
+                            </div>
+                        </div>
+        
+                        <div class="feature">
+                            <div class="imgdiv">
+                                <img src="assets/media3.jpg" alt="">
+                            </div>
+                            <div class="pd">
+                                <h2 class="view des">Lagos</h2>
+                                <p>Brookline Estate (600 SQM), For sale, ₦ 6,600,000.00 Dry Land | Gatehouse | Registered Survey | 600sqft Ketu, Epe, Lagos</p>
+                            </div>
+                        </div>
+        
+                        <div class="feature">
+                            <div class="imgdiv">
+                                <img src="assets/media2.jpg" alt="">
+                            </div>
+                            <div class="pd">
+                                <h2 class="view des">Lagos</h2>
+                                <p>Brookline Estate (600 SQM), For sale, ₦ 6,600,000.00 Dry Land | Gatehouse | Registered Survey | 600sqft Ketu, Epe, Lagos</p>
+                            </div>
+                        </div>
+    
+                        <div class="feature">
+                            <div class="imgdiv">
+                                <img src="assets/media4.jpg" alt="">
+                            </div>
+                            <div class="pd">
+                                <h2 class="view des">Lagos</h2>
+                                <p>Brookline Estate (600 SQM), For sale, ₦ 6,600,000.00 Dry Land | Gatehouse | Registered Survey | 600sqft Ketu, Epe, Lagos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+
+            <div class="body testimonials grey center">
+                <div data-aos="fade-down">
+                    Secure your property needs with us,<br>
+                    <span>quality</span>
+                    is assured 
+                </div>
+
+
+                <p data-aos="fade-up">Discover our handpicked selection of premium properties that showcase the best in modern living and investment opportunities. <br>
+                 Each property reflects our commitment to excellence, blending innovative design with prime locations.</p>
+
+            </div>
+
+            <div class=" body map-container center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d126628.0173498366!2d3.826465812917039!3d7.339795892036448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sKemsan!5e0!3m2!1sen!2sng!4v1725107530269!5m2!1sen!2sng"
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+
+
+
+
+            <section class="frame footer">
+                <div class="flex">
+                    <div class="float col">
+                        <img class="mid" src="logo1.png" alt="">
+                        Kemsan Acres
+                       <span class="blue"> #1 Real-estate service in Nigeria.</span>
+                       <br>
+                        <div class="aly">
+                            <a href="#" class="ref">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="ref">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a> 
+                            <a href="#" class="ref">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#" class="ref">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>                            
+                        </div>
+                    </div>
+        
+                    <div class="flex">
+                        <ul class="">
+                            <h4 class="blue">SITE MAP</h4>
+                            <br>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Information</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Estate</li>
+                        </ul>
+            
+                        <ul class="">
+                            <h4 class="blue">Company</h4>
+                            <br>
+                            <li><a href="#">Instgram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+
+                        <ul class="">
+                            <h4 class="blue">Legal</h4>
+                            <br>
+                            <li><a href="#">Instgram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
