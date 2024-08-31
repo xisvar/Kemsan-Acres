@@ -712,7 +712,7 @@ nav{
             flex-wrap: wrap;
 
             .prev, .next{ 
-                bottom: 15%;   
+                bottom: 5%;   
             }
         }
 
