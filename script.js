@@ -1,12 +1,40 @@
+
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    preloader.style.opacity = '0';
+    setTimeout(function() {
+        preloader.style.display = 'none';
+    }, 750); 
+  });
+
 const toggleMenu = () => {
     document.body.classList.toggle("open");
 };
+
+// Close menu when clicking outside
+document.addEventListener('click', (event) => {
+    const menu = document.querySelector('.menu');
+    const burger = document.querySelector('.navbar-burger');
+
+    if (!menu.contains(event.target) && !burger.contains(event.target)) {
+        document.body.classList.remove("open");
+    }
+});
+
+// Close menu when pressing the ESC key
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        document.body.classList.remove("open");
+    }
+});
+
 
 const carousel = document.querySelector('.carousel');
 const images = [
     '/assets/kemsan.JPG',
     '/residence-2219972.jpg',
     '/assets/wide.jpg',
+    '/assets/wider.jpg'
 ];
 
 let currentIndex = 0;
@@ -86,14 +114,6 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
-
-
-
-
-
-
-
-
 
 
 

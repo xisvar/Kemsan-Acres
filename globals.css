@@ -1,19 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Pen+Script&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&family=Roboto:wght@400;700&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/tasa-orbiter-display');
  
-@font-face {
-    font-family: 'Canela Web';
-    src: url('https://www.harvard.edu/wp-content/themes/core/assets/fonts/theme/canela/Canela-Regular-Web.woff2') format('woff2');
- 
-  }
-
-@font-face {
-    font-family: "Google Sans";
-    src: url("https://fonts.gstatic.com/s/googlesans/v58/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vgCIhM907w.woff2") format("woff2");
-  }
-  
 body{
     margin:0 !important;
     /* background: #fff; */
@@ -38,7 +24,7 @@ body{
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Google Sans";
+    font-family: 'TASA Orbiter Display', sans-serif;
     transition: .4s ease;
 }
 
@@ -145,6 +131,10 @@ a{
     position: absolute;
 }
 
+.pd{
+    padding: 10px;
+}
+
 nav{
     display: flex;
     flex-direction: row;
@@ -170,8 +160,8 @@ nav{
         justify-content: space-between;
         align-items: center;
         img{
-            width: 40px;
-            height: 40px;
+            width: 60px;
+            height: 60px;
             object-fit: cover;
             object-position:center;
             border-radius: 10px;
@@ -184,13 +174,11 @@ nav{
             font-size: 16px;
             font-weight: 600;
             margin-left: 10px;
-            font-family: "GT America";
          }
          span{
             font-size: 12px;
             font-weight: 400;
             margin-left: 10px;
-            font-family: "GT America";
             color: #8E8E8E;
          }
         }
@@ -203,7 +191,6 @@ nav{
         a{
             padding: 0px 10px;text-decoration: none;
             font-size: 16px;
-            font-family: "GT America";
             font-weight: 600;
             color: #51515156;
             cursor: pointer;
@@ -219,6 +206,7 @@ nav{
         display: flex;
         border-width: 1px 1px 3px 1px;
         border-style: solid;
+        background-color: #0091ff;
         border-color: #51515156;
         padding: 5px 10px;
         border-radius: 6px;
@@ -226,22 +214,17 @@ nav{
         flex-direction: row;
         align-items: center;
         .green{
-            background-color: #38b6ec;
- 
-        height: 8px;
-        width: 8px;
-        border-radius: 50%;
-        margin-right: 6px;
-        
+            background-color: #ffffff;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            margin-right: 6px;  
         }
         .label{
             font-size: 13px;
-            font-family: "GT America";
             font-weight: 600;
-            color: #767676;
-  
+            color: #ffffff;
             cursor: pointer;
-          
         }
     }
 }
@@ -307,7 +290,6 @@ nav{
     min-height: 90vh;
     .hero{
         .first{
-            font-family: "Google Sans";
             font-size: 65px;
             font-weight: 900;
             color: #fff;
@@ -357,6 +339,10 @@ nav{
         }
     }
 
+    .pd{
+        padding: 10px;
+    }
+
     .flex{
         display: flex;
     }
@@ -367,7 +353,6 @@ nav{
     color: #000;
     .hero{
         .first{
-            font-family: "Google Sans";
             font-size: 45px;
             color: #000;
         }
@@ -402,7 +387,7 @@ nav{
 
 #features{
     gap: 0;
-    min-height: 65vh;
+    min-height: 55vh;
     .flex{
         gap:0%;
     }   
@@ -417,7 +402,6 @@ nav{
     .hero{
         max-width: 100%;
         .first{
-            font-family: "Google Sans";
             font-size: 65px;
             font-weight: 900;
             color: #000;
@@ -434,7 +418,6 @@ nav{
     justify-content: center;
     text-align: center;
     font-size: 65px;
-    font-family: "Google Sans";
     font-weight: 900;
     .flex{
         justify-content: center;
@@ -530,7 +513,6 @@ nav{
 .testimonials{
     line-height: 1;
     h4{
-        color: #0091ff;
         font-size: 22px;
     }
 
@@ -557,7 +539,6 @@ nav{
                 display: flex;
                 flex-wrap: wrap;
                 gap: 20px;
-
                     .feature {
                         display: flex;
                         flex-direction: row;
@@ -583,6 +564,11 @@ nav{
 
                         .view.des {
                             margin-top: 10px;
+                        }
+
+                        i{
+                            font-size: 12px;
+                            color: rgb(255, 157, 0);
                         }
                     }
                 }
@@ -623,6 +609,13 @@ nav{
 
 }
 
+.media{
+
+    h3{
+        font-size: 45px;
+    }
+}
+
 .footer{
     padding: 80px;
     min-height: 50vh;
@@ -631,14 +624,22 @@ nav{
 
 .features{
     display: flex;
+    gap: 20px;
 }
 
 .feature{
     background: #fff;
+    border-radius: 45px 45px 0 0;
+    min-width: 210px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: 0.3s ease;
+    box-shadow: 0px 5px 20px rgba(212, 204, 204, 0.161);
+    flex-direction: column;
 }
 
 .feature .imgdiv{
-    min-height: 60%;
+    min-height: 5%;
     justify-content: center;
 }
 
@@ -646,7 +647,7 @@ nav{
     max-width: 100%;
     width: 100%;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 45px 45px 0 0;
     min-height: 200px;
     height: 200px;
     max-height: 210px;
@@ -660,18 +661,6 @@ nav{
 
 .page::-webkit-scrollbar{
     display: none;
-}
-
-.feature{
-    min-width: 270px;
-    min-height: 230px;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 10px;
-    margin-left: 5px;
-    transition: 0.3s ease;
-    box-shadow: 0px 5px 20px rgba(212, 204, 204, 0.161);
-    flex-direction: column;
 }
 
 .feature:hover{
@@ -691,8 +680,13 @@ nav{
     font-size: 10px;
 }
 
+@media screen and (max-width: 999px){
+    #purpose{
+        flex-wrap: wrap;
+        }
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .app{
         min-height: 65vh;
     }
@@ -720,6 +714,10 @@ nav{
             .prev, .next{ 
                 bottom: 15%;   
             }
+        }
+
+        .pd{
+            padding: 10px;
         }
         .hero{
             .first{
@@ -750,7 +748,6 @@ nav{
 
     #purpose, #features{
         flex-wrap: wrap;
-
         .first{
             font-size: 25px;
         }
@@ -961,7 +958,7 @@ button {
   }
   
   body.open .navbar-burger {
-    background-image: url("./assets/close.svg~");
+    background-image: url("./assets/close.svg");
   }
  
   .menu {
