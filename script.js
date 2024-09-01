@@ -204,7 +204,7 @@ crousel.addEventListener('mousemove', (e) => {
 crousel.addEventListener('touchstart', (e) => {
     isDown = true;
     startX = e.touches[0].pageX - crousel.offsetLeft;
-    scrollLeft = carousel.scrollLeft;
+    scrollLeft = crousel.scrollLeft;
 });
 
 crousel.addEventListener('touchend', () => {
