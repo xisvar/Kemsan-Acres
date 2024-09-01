@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function updatePagination() {
         paginationContent.style.transform = `translateX(-${currentPage * 100}%)`;
         prevButton.disabled = currentPage === 0;
-        nextButton.disabled = currentPage === pages.length - 2;
+        nextButton.disabled = currentPage === pages.length - 3;
     }
 
     prevButton.addEventListener('click', () => {
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     nextButton.addEventListener('click', () => {
-        if (currentPage < pages.length - 1) {
+        if (currentPage < pages.length - 2) {
             currentPage++;
             updatePagination();
         }
@@ -159,14 +159,6 @@ document.addEventListener('keydown', function(e) {
 
 
 
-
-
-
-
-
-
-
-
 window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
     const mainContent = document.querySelector('.main-content');
@@ -177,3 +169,52 @@ window.addEventListener('load', () => {
         mainContent.style.display = 'block';
     }, 1000); // Matches the fade out duration
 });
+
+const crousel = document.querySelector('.page');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+crousel.addEventListener('mousedown', (e) => {
+    isDown = true;
+    crousel.classList.add('active');
+    startX = e.pageX - crousel.offsetLeft;
+    scrollLeft = crousel.scrollLeft;
+});
+
+crousel.addEventListener('mouseleave', () => {
+    isDown = false;
+    crousel.classList.remove('active');
+});
+
+crousel.addEventListener('mouseup', () => {
+    isDown = false;
+    crousel.classList.remove('active');
+});
+
+crousel.addEventListener('mousemove', (e) => {
+    if (!isDown) return;  // Stop the function from running
+    e.preventDefault();
+    const x = e.pageX - crousel.offsetLeft;
+    const walk = (x - startX) * 2;
+    crousel.scrollLeft = scrollLeft - walk;
+});
+
+// For touch devices
+crousel.addEventListener('touchstart', (e) => {
+    isDown = true;
+    startX = e.touches[0].pageX - crousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+});
+
+crousel.addEventListener('touchend', () => {
+    isDown = false;
+});
+
+crousel.addEventListener('touchmove', (e) => {
+    if (!isDown) return;
+    const x = e.touches[0].pageX - crousel.offsetLeft;
+    const walk = (x - startX) * 2; // omoh just multiply by 2 for faster scrolling
+    crousel.scrollLeft = scrollLeft - walk;
+});
+

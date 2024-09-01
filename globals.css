@@ -429,7 +429,7 @@ nav{
     }
 
     .pro, .blue{
-        margin-top: 20px;
+        margin-top: 30px;
         padding: 20px 40px;
         border-radius: 5px;
         color: white;
@@ -475,7 +475,7 @@ nav{
     
     .blue{
         background-color: rgb(59 130 246);
-
+        font-family: 'TASA Orbiter Display', sans-serif;
         button{
             color: rgb(59 130 246);
         }
