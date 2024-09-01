@@ -157,3 +157,23 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
+
+
+
+
+
+
+
+
+
+
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    const mainContent = document.querySelector('.main-content');
+
+    preloader.classList.add('hide-preloader');
+    setTimeout(() => {
+        preloader.style.display = 'none';
+        mainContent.style.display = 'block';
+    }, 1000); // Matches the fade out duration
+});

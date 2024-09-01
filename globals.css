@@ -621,6 +621,18 @@ nav{
     min-height: 50vh;
 }
 
+/* Container for the entire page */
+.page {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    padding-bottom: 60px; /* Adds padding to the bottom */
+    position: relative; /* Necessary for the glow effect */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+/* Hides the scrollbar */
+.page::-webkit-scrollbar {
+    display: none;
+}
 
 .features{
     display: flex;
@@ -652,15 +664,6 @@ nav{
     height: 200px;
     max-height: 210px;
     object-fit: cover;
-}
-
-.page{
-    overflow-x: auto;
-    padding-bottom: 60px;
-}
-
-.page::-webkit-scrollbar{
-    display: none;
 }
 
 .feature:hover{
@@ -712,7 +715,7 @@ nav{
             flex-wrap: wrap;
 
             .prev, .next{ 
-                bottom: 15%;   
+                bottom: 5%;   
             }
         }
 

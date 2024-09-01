@@ -1,2 +1,0 @@
-# Kemsan-Acres
-Real estate.
