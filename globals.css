@@ -621,7 +621,6 @@ nav{
         .feature{
             min-width: 275px;
             text-align: left;
-
             .relative{
 
                 .flex{
@@ -659,7 +658,7 @@ nav{
 .feature{
     background: #fff;
     border-radius: 45px 45px 0 0;
-    min-width: 210px;
+    min-width: 240px;
     cursor: pointer;
     margin-left: 5px;
     transition: 0.3s ease;
@@ -810,6 +809,12 @@ nav{
             aspect-ratio: 16/4;
             object-fit: contain;
             max-width: 325px;
+        }
+    }
+
+    .media{ 
+        .flex{
+            justify-content: left;
         }
     }
 
