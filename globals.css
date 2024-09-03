@@ -614,6 +614,23 @@ nav{
     h3{
         font-size: 45px;
     }
+
+    .features{
+        margin-top: 35px;
+        justify-content: center;
+        .feature{
+            min-width: 275px;
+            text-align: left;
+
+            .relative{
+
+                .flex{
+                    flex-wrap: nowrap;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
 }
 
 .footer{
@@ -787,7 +804,6 @@ nav{
     .half{    
         .flex{
             justify-content: center;
-            align-items: center;
         }
         
         .ally{
