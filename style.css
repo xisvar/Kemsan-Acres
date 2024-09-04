@@ -203,3 +203,8 @@ iframe {
 .main-content {
     display: none;
 }
+
+.bt{
+    margin-top: 21px;
+    border-top: .1px solid #000; 
+}
